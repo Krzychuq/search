@@ -1,0 +1,91 @@
+*{box-sizing: border-box; margin: 0;}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(163, 136, 13);
+}
+
+header{ color: white;}
+.formularz{
+    border: solid 2px white;
+    background-color: darkgoldenrod;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.pole input{
+    border: none;
+    border-radius: 2px;
+}
+.pole input:focus{
+    text-decoration: none;
+}
+.formularz button{
+    border-radius: 50px;
+    border: solid 2px white;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: transparent;
+    justify-content: center;
+    cursor: pointer;
+}
+.tabela{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.przycisk{
+    text-align: center;
+}
+a {
+    font-size: 2.2rem;
+    background: 
+    linear-gradient(to right,
+     rgba(255, 255, 255, 0) 0%,
+      rgba(167, 167, 167, 0.5) 20%,
+     rgba(255, 255, 255, 0) 61%
+     ),
+    linear-gradient(
+        rgb(252, 252, 252) 52%,
+       rgb(255, 255, 255) 60%,
+        rgb(0, 0, 0) 80%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fala 2000ms ease alternate infinite;
+    transition: all 1s ease;
+  }
+  @keyframes fala {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50vw 10px;
+    }
+  }
+
+.tabelka{
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: fit-content;
+    background-color: rgb(0, 0, 0);
+    color: black;
+}
+.tabelka td{
+    padding: 5px;
+}
+.tabelka td:nth-child(even), .tabelka th:nth-child(even){
+    background-color: lightgray;
+}
+.tabelka td:nth-child(odd), .tabelka th:nth-child(odd){
+    background-color: white;
+}
+
+
